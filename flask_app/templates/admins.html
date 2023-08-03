@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{ url_for( 'static', filename='css/index.css' ) }}>
+    <link rel="stylesheet" href={{ url_for( 'static', filename='css/dashboard.css' ) }}>
+    <title>Admins List</title>
+</head>
+<body>
+    <div class="menu-in-page">
+        <a href="/settings"><button>back</button></a>
+    </div>
+    <h1 class="login">Admins List</h1>
+    <div class="container">
+        {% for admin in all_admins%}
+        <div class="list">
+            <h2 class="user-name">{{admin.first_name}} {{admin.last_name}}</h2>
+            <div class="admin-setting">
+                {% if (logged_user.id == admin.id or logged_user.id == 2) %}
+                <a href="/edit/{{admin.id}}">
+                    <button>Edit</button>
+                </a>
+                {% endif%}
+                {% if logged_user.id == 2 %}
+                <a href="/delete/{{admin.id}}">
+                    <button>Delete</button>
+                </a>
+                {% endif%}
+            </div>
+        </div>
+        {% endfor %}
+        {% if logged_user.id == 2 %}
+        <div class="create-btn">
+            <a href="/newadmin"><button>Create New Admin</button></a>
+        </div>
+        {% endif%}
+    </div>
+</body>
+</html>

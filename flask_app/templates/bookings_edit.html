@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{ url_for( 'static', filename='css/index.css' ) }}>
+    <link rel="stylesheet" href={{ url_for( 'static', filename='css/new_admin.css' ) }}>
+    <title>Edit an Appointment</title>
+</head>
+<body>
+    <div class="menu-in-page">
+        <a href="/dashboard"><button>back</button></a>
+    </div>
+    <h1 class="login welcome">Edit an Appointment</h1>
+    <div class="login padding-bottom">
+        <form action="/admin/register" method="post">
+            {% for message in get_flashed_messages(category_filter=['booking'])%}
+                <p class="flash">{{message}}</p>
+            {% endfor %}
+            <p for="client_name">Name</p>
+            <input type="text" name="client_name" id="client_name" placeholder="client's name" >
+
+            <p for="email">Email</p>
+            <input type="email" name="email" id="email" placeholder="client's email">
+
+            <p for="phone">Phone Number</p>
+            <input type="text" name="phone" id="phone" placeholder="EX: (123)456-7890">
+
+            <p for="date">Date</p>
+            <input type="date" name="date" id="date">
+
+            <p for="time">Time</p>
+            <input type="text" name="time" id="time" placeholder="10:00">
+
+            <p for="service">Service</p>
+            <textarea name="service" id="service" cols="30" rows="10" placeholder="What kind of service does the client need"></textarea>
+            <p class="book">
+                <button>Update</button>
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>

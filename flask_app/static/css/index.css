@@ -1,0 +1,184 @@
+@font-face {
+    font-family: barber;
+    src: url(/static/fonts/battlesbridge-demo/BattlesbridgeDemoRegular.ttf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(/static/fonts/AlvaroFont/Alvaro-Condensed.otf);
+}
+
+@font-face {
+    font-family: subtitle;
+    src: url(/static/fonts/Soundings/SoundingScript.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: body;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(181, 179, 179);
+}
+.login {
+    font-family: barber;
+}
+
+h1 {
+    font-family: barber;
+}
+
+.manager {
+    color: grey;
+    font-family: body;
+    padding-bottom: 1rem;
+}
+
+/* .message {
+    font-family: body;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color: white;
+} */
+
+input, textarea{
+    background-color: rgb(54, 54, 54);
+    padding: 0.7em 0.5rem;
+    border-radius: 0.25em;
+    width: 300px;
+    color: whitesmoke;
+    font-family: body;
+    letter-spacing: 1px;
+    font-size: larger;
+    /* margin-bottom: 2rem; */
+}
+
+
+.login,
+.title {
+    display: flex;
+    justify-content: center;
+    /* padding: 1rem; */
+    /* margin: 1rem; */
+    align-items: center;
+}
+
+.title {
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-top: 5rem;
+}
+
+.button {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    padding-top: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.7em;
+    background-color: rgb(72, 5, 5);
+    font-family: body;
+    font-size: larger;
+    cursor: pointer;
+    color: rgb(181, 179, 179);
+}
+
+button:hover {
+    color: white;
+}
+
+.menu-in-page{
+    display: flex;
+    justify-content: end;
+    padding: 3rem 10rem 0 0 ;
+    gap: 0.5em;
+}
+
+
+.container{
+    background-color: rgb(75, 74, 74);
+    width: 100%;
+    max-width: 540px;
+    margin: 2rem auto;
+    border-radius: 1em;
+    border: 2px solid grey ;
+    margin-bottom: 10rem;
+    padding-bottom: 3rem;
+}
+
+.welcome{
+    padding: 0;
+    margin: 0;
+}
+
+.create-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.user-name{
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: rgb(239, 239, 239);
+}
+
+.flash{
+    font-family: body;
+    color: rgb(224, 35, 35);
+    text-align: center;
+}
+
+.padding-bottom{
+    padding-bottom: 5rem;
+    margin-bottom: 2rem;
+}
+
+.alberto{
+    font-family: body;
+}
+
+.range{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-cal{
+    background-color: rgb(75, 74, 74);
+    width: 100%;
+    max-width: 80%;
+    margin: 2rem auto;
+    border-radius: 1em;
+    border: 2px solid grey ;
+    margin-bottom: 10rem;
+    padding-bottom: 3rem;
+}
+
+.cal-box{
+    width: 250px;
+
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{ url_for( 'static', filename='css/index.css' ) }}>
+    <link rel="stylesheet" href={{ url_for( 'static', filename='css/dashboard.css' ) }}>
+    <title>Dashboard</title>
+    
+</head>
+<body>
+    <div>
+        <div id="logout-dash">
+            <a href="/logout">
+                <button>logout</button>
+            </a>
+        </div>
+        <h1 class="login" class="welcome" > 
+            Hello {{logged_user.first_name}} 
+        </h1> 
+        <h2 class="manager">Dashboard</h2>
+    </div>
+    <div class="container categories">
+        <div class="category">
+            <a href="/calendar">
+                Calendar
+            </a>
+        </div>
+
+        <div class="category">
+            <a href="/expenses">
+                Expenses
+            </a>
+        </div>
+
+        <div class="category">
+            <a href="/booktime">
+                Book an Appointment
+            </a>
+        </div>
+
+        <div class="category">
+            <a href="/todolist">
+                To do List
+            </a>
+        </div>
+
+        <div class="category">
+            <a href="/settings">
+                Settings
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

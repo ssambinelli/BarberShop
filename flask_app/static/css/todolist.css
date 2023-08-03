@@ -1,0 +1,72 @@
+.list{
+    color: whitesmoke;
+    font-family: body;
+    /* padding: 1rem 1rem 2rem 3rem; */
+    font-size: 40px;
+    list-style: none;
+}
+
+.list img{
+    width: 30px;
+    height: 30px;
+}
+
+ul li {
+    position: relative;
+    padding: 1rem 4rem ;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url('/static/imgs/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 1.25rem;
+    left: 1rem;
+}
+
+ul li.checked{
+    color: rgb(12, 12, 12);
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url('/static/imgs/checked.png');
+
+}
+
+#add-task{
+    display: flex;
+    padding: 1rem ;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+input{
+    padding: 0.8rem 0.5rem;
+    background-color: black;
+    color: whitesmoke;
+    width: 75%;
+    border-radius: 0.5em;
+}
+
+
+ul li span{
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 5rem;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    color: rgb(103, 5, 5);
+}

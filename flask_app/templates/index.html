@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href={{ url_for( 'static', filename='css/index.css' ) }}>
+    </head>
+    <body>
+        <!-- Login Form  -->
+        <!-- <div>
+            <img src="{{ url_for('static', filename='/imgs/logo2.jpeg') }}">
+            
+        </div> -->
+        <div class="title">
+            <h1>Barber Shop</h1>
+            <h1 class="manager">Manager</h1>
+        </div>
+        {% for message in get_flashed_messages(category_filter=['login'])%}
+        <p class="flash">{{message}}</p>
+        {% endfor %}
+        <div class="login">
+            <form action="/users/login" method="post">
+                <p>Email</p>
+                <input type="text" name="email">
+        
+                <p>Password</p>
+                <input class='col-6' type="password" name="password">
+
+                <p class="button">
+                    <button class="btn btn-primary">Log in</button>
+                </p>
+        </div>
+    </body>
+</html>

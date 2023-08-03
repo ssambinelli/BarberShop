@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{ url_for( 'static', filename='css/index.css' ) }}>
+    <link rel="stylesheet" href={{ url_for( 'static', filename='css/new_admin.css' ) }}>
+    <title>Update Admin</title>
+</head>
+<body>
+    <div class="menu-in-page">
+        <a href="/settings"><button>back</button></a>
+    </div>
+    <h1 class="login welcome">Update Admin</h1>
+    <div class="login padding-bottom">
+        <form action="/update/{{one_admin.id}}" method="post">
+            {% for message in get_flashed_messages(category_filter=['edit'])%}
+                <p class="text-danger">{{message}}</p>
+            {% endfor %}
+            <p for="first_name">Name</p>
+            <input type="text" name="first_name" id="first_name" value="{{one_admin.first_name}}">
+
+            <p for="last_name">Last Name</p>
+            <input type="text" name="last_name" id="last_name" value="{{one_admin.last_name}}">
+
+            <p for="email">Email</p>
+            <input type="email" name="email" id="email" value="{{one_admin.email}}">
+
+            <p class="button">
+                <button>Update</button>
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>
