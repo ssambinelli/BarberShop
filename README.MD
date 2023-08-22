@@ -6,3 +6,4 @@ To start the app we need to run the following command
 
 $ python server.py
 
+<img width="1422" alt="barbershop" src="https://github.com/ssambinelli/BarberShop/assets/86628492/9233bd9b-af12-40dd-9058-5d532f1a7336">
