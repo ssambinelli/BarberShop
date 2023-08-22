@@ -1,8 +1,8 @@
-Barber Shop Manager
+# Barber Shop Manager
 
 This app was developed to help the management of a Barber Shop, the user can schedule, edit and delete appoiments, check the calendar, create a To Do List for the day to organize the workflow and tasks and manage expenses with an expense tracker (this feature is currently being optmized, so is not available at the moment. 
 
-#Technologies Used 
+# Technologies Used 
 <div align="center">
 	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" alt="HTML" title="HTML"/></code>
 	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png" alt="CSS" title="CSS"/></code>
@@ -23,22 +23,22 @@ A user can create a login and upon registration is sent to the main page
 If the user already exists the app request those credentials 
 <img width="1440" alt="Screenshot 2023-08-03 at 5 49 53 PM" src="https://github.com/ssambinelli/BarberShop/assets/86628492/d4bb819b-83df-4cb6-912e-241d2213ed73">
 
-#Main Page 
+## Main Page 
 Upon login, this page displays a menu for the user, a quick access to all the useful tools on the app
 <img width="1422" alt="barbershop" src="https://github.com/ssambinelli/BarberShop/assets/86628492/9233bd9b-af12-40dd-9058-5d532f1a7336">
 
-#Booking and Calendar 
+## Booking and Calendar 
 The user can book time for the client and add useful information for the appointment
 <img width="1440" alt="Screenshot 2023-08-22 at 4 17 23 PM" src="https://github.com/ssambinelli/BarberShop/assets/86628492/660f9ab2-7ec9-4a73-a760-9ec31b77afa6">
 
 The calendar easy to access and offer the edit and cancel options 
 <img width="1440" alt="Screenshot 2023-08-22 at 4 18 05 PM" src="https://github.com/ssambinelli/BarberShop/assets/86628492/640e7639-67dc-4f4b-a45e-babc241250ab">
 
-#To do app
+## To do app
 This is a task managing app to help its user to stay organized for their day to day activities
 <img width="1440" alt="Screenshot 2023-08-22 at 4 21 59 PM" src="https://github.com/ssambinelli/BarberShop/assets/86628492/1328334a-2af5-4ba1-9a84-57484c746dfe">
 
-#Settings 
+## Settings 
 The only user allow to edit all users is the master user or admin, if the logged user is not the master, it can only change own information. 
 
 - Admin Settings 
