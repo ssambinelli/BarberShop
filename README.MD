@@ -6,6 +6,3 @@ To start the app we need to run the following command
 
 $ python server.py
 
-
-
-!(file:///Users/sabrina/Desktop/Screenshot%202023-08-03%20at%205.49.32%20PM.png)
